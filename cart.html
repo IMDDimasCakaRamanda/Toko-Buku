@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku Dimas</title>
+     <!-- Link CSS Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <style>
+         /* Custom CSS for the Bookstore website */
+         body {
+             padding-top: 60px; /* Add some padding for the fixed navbar */
+         }
+         .hero-section {
+             background-color: #007bff;
+             color: #fff;
+             padding: 150px 0;
+         }
+         .book-card {
+             height: 100%;
+         }
+         .book-card img {
+             height: 300px;
+             object-fit: cover;
+         }
+     </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">SeeBook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cart.html">Cart<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mt-4">
+        <h2>Cart</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cinta di Dalam Gelas</td>
+                            <td>Rp 70.000</td>
+                            <td>1</td>
+                            <td>Rp 70.000</td>
+                            <td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bumi Manusia</td>
+                            <td>Rp 70.000</td>
+                            <td>2</td>
+                            <td>Rp 140.000</td>
+                            <td><a href="#" class="btn btn-danger btn-sm">Remove</a></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-right">Total:</td>
+                            <td>Rp 210.000</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <h2>Checkout</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea class="form-control" id="address" rows="3" placeholder="Street Address, City, State, ZIP"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="card">Credit Card Number:</label>
+                        <input type="text" class="form-control" id="card" placeholder="Credit Card Number">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="mt-auto bg-dark text-white text-center py-3">
+    <p>© 2023 Bookstore. All rights reserved.</p>
+    </footer>
+    <!-- Link JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
